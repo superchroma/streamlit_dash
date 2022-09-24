@@ -41,7 +41,7 @@ st.header("Participant Types")
 # bar graph
 val_count  = df['Q1'].value_counts()
 fig = plt.figure(figsize=(10,5))
-sns.barplot(x=val_count.index, y=val_count.values, alpha=0.8).set_title("Participants Signed Up By Type")
+sns.barplot(x=val_count.values, y=val_count.index, alpha=0.8).set_title("Participants Signed Up By Type")
 plt.title('Participants Signed Up By Type')
 plt.ylabel('Number of Participants', fontsize=12)
 plt.xlabel('Participant Type', fontsize=12)

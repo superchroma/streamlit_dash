@@ -125,7 +125,7 @@ if st.button("Decision Making Study"):
 st.header("Studies")
 val_count  = df3['experiment_name'].value_counts()
 fig = plt.figure(figsize=(15,18))
-sns.barplot(val_count.values, val_count.index, alpha=0.8)
+sns.barplot(x=val_count.values, y=val_count.index, alpha=0.8)
 plt.ylabel('Study Name', fontsize=12)
 plt.xlabel('Number of Participants', fontsize=12)
 st.pyplot(fig)

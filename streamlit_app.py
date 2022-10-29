@@ -28,7 +28,7 @@ for i in range(len(df)):
     count+=1
 print(count)
 
-percentage=len(df)/2077 *100
+percentage=len(df)/2305 *100
 
 # create title
 st.title("SONA Tracking Dashboard")
